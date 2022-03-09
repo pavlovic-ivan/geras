@@ -35,3 +35,11 @@ jobs:
       - name: Run tests
         run: |
           go test ./...
+          
+      - name: Scan
+        continue-on-error: false
+        uses: tidelift/scan-action@main
+        env:
+          TIDELIFT_API_KEY: ${{ secrets.TIDELIFT_API_KEY }}
+          TIDELIFT_ORGANIZATION: ${{ secrets.TIDELIFT_ORGANIZATION }}
+          TIDELIFT_PROJECT: ${{ secrets.TIDELIFT_PROJECT }}
