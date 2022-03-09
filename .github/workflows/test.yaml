@@ -38,7 +38,7 @@ jobs:
           
       - name: Scan
         continue-on-error: false
-        uses: tidelift/scan-action@main
+        uses: tidelift/alignment-action@main
         env:
           TIDELIFT_API_KEY: ${{ secrets.TIDELIFT_API_KEY }}
           TIDELIFT_ORGANIZATION: ${{ secrets.TIDELIFT_ORGANIZATION }}
