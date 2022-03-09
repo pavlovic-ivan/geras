@@ -10,7 +10,7 @@ This makes it possible to query OpenTSDB via PromQL, through Thanos.
 Since Thanos's StoreAPI is designed for unified data access and is not too Prometheus specific,
 Geras is able to provide an implementation which proxies onto the OpenTSDB HTTP API, giving the
 ability to query OpenTSDB using PromQL, and even enabling unified queries (including joins) over
-Prometheus and OpenTSDB.
+Prometheus and OpenTSDB. 
 
 ## Build
 
